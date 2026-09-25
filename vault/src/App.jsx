@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import "./index.css";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://khazana-full-project.onrender.com";
 
 function formatSize(bytes = 0) {
   bytes = Number(bytes) || 0;
