@@ -41,13 +41,12 @@ from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://khazana.vercel.app",
+        "https://khazanaa-mkpp3jure-vijay-laxmi-2582006.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 BASE_DIR = Path(__file__).resolve().parent
 
