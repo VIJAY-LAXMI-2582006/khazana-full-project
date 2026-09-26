@@ -37,18 +37,14 @@ app = FastAPI(title="Khazana Storage API")
 
 
 app.add_middleware(
-
     CORSMiddleware,
-
-    allow_origin_regex=r"^http://(localhost|127\.0\.0\.1):[0-9]+$",
+    allow_origins=[
+        "https://khazana.vercel.app",
+    ],
     allow_credentials=True,
-
     allow_methods=["*"],
-
     allow_headers=["*"],
-
 )
-
 
 
 BASE_DIR = Path(__file__).resolve().parent
